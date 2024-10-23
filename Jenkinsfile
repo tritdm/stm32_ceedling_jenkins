@@ -7,9 +7,13 @@ pipeline {
                 git url: 'https://github.com/tritdm/stm32_ceedling_jenkins.git', branch: 'main'
             }
         }
+        stage('Check Ceedling Version') {
+            steps {
+                bat 'ceedling version'
+            }
+        }
         stage('Run Tests') {
             steps {
-                // Sử dụng lệnh bat để chạy ceedling trên Windows
                 bat 'ceedling test:all'
             }
         }
