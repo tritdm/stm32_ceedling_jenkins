@@ -19,9 +19,9 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            junit testResults: 'build/artifacts/test/report.xml'
-        }
-    }
+    // post {
+    //     always {
+    //         junit testResults: 'build/artifacts/test/report.xml'
+    //     }
+    // }
 }
