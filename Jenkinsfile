@@ -9,8 +9,6 @@ pipeline {
         }
         stage('Check PATH') {
             steps {
-                // In biến môi trường PATH để kiểm tra
-                bat 'echo %PATH%'
                 bat 'ceedling version'
             }
         }
@@ -23,7 +21,7 @@ pipeline {
 
     post {
         always {
-            junit 'build/test/results/*.xml'
+            junit 'build/test/results/*.pass'
         }
     }
 }
