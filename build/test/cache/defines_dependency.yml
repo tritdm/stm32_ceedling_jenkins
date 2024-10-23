@@ -1,0 +1,11 @@
+---
+build/test/mocks/mock_stm32f1xx_hal_gpio.c:
+- TEST
+build/test/mocks/mock_stm32f1xx_hal.c:
+- TEST
+Core/Src/main.c:
+- TEST
+build/test/mocks/mock_stm32f1xx_hal_rcc.c:
+- TEST
+build/test/mocks/mock_stm32f1xx_hal_exti.c:
+- TEST

@@ -1,0 +1,6 @@
+---
+- C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/ceedling-0.31.1/vendor/unity/src/unity.h
+- build/test/mocks/mock_stm32f1xx_hal.h
+- build/test/mocks/mock_stm32f1xx_hal_gpio.h
+- build/test/mocks/mock_stm32f1xx_hal_rcc.h
+- build/test/mocks/mock_stm32f1xx_hal_exti.h

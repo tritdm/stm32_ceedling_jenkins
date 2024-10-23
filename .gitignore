@@ -1,0 +1,12 @@
+*.bin
+*.elf
+*.list
+!objects.list
+*.map
+*.d
+*.o
+*.su
+test_result*.xml
+build/
+Debug/
+Release/
