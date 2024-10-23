@@ -305,6 +305,9 @@
   :gcovr:
     :html_medium_threshold: 75
     :html_high_threshold: 90
+:xml_tests_report:
+  :enabled: true
+  :report_path: build/test/result
 :module_generator:
   :project_root: "./"
   :source_root: src/

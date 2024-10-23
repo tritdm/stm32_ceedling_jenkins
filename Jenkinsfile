@@ -14,14 +14,14 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'ceedling test:all'
+                bat 'ceedling test:all 2>&1 | tee build/artifacts/test/report.xml'
             }
         }
     }
 
     post {
         always {
-            junit 'build/test/results/*.pass'
+            junit 'build/artifacts/test/*.xml'
         }
     }
 }
