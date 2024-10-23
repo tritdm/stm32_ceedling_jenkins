@@ -21,7 +21,7 @@ pipeline {
 
     post {
         always {
-            junit skipPublishingChecks: true, testResults: 'build/artifacts/test/*.xml'
+            junit skipPublishingChecks: true, testResults: 'build/artifacts/test/report.xml'
         }
     }
 }
