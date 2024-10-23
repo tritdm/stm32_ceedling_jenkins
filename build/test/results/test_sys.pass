@@ -4,15 +4,11 @@
   :file: test_sys.c
 :successes: []
 :failures: []
-:ignores:
-- :test: test_sys_NeedToImplement
-  :line: 17
-  :message: Need to Implement sys
-  :unity_test_time: 0
+:ignores: []
 :counts:
-  :total: 1
+  :total: 0
   :passed: 0
   :failed: 0
-  :ignored: 1
+  :ignored: 0
 :stdout: []
-:time: 0.022617700000409968
+:time: 0.5312722999951802
