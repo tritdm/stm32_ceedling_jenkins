@@ -17,11 +17,17 @@ pipeline {
                 bat 'ceedling test:all'
             }
         }
+        stage('Gen XML') {
+            steps {
+                bat '\'./generate_junit_report.sh\''
+            }
+        }
+        
     }
 
     post {
         always {
-            junit testResults: 'build/artifacts/test/report.xml', skipPublishingChecks: true
+            junit testResults: 'build/artifacts/test/junit_report.xml', skipPublishingChecks: true
         }
     }
 }

@@ -127,17 +127,17 @@ void test_toggle_led(void) {
 
     HAL_Delay_CMockExpect(65, 500);
 
-    HAL_Delay_CMockExpect(66, 500);
+
+
+
+
+    HAL_GPIO_WritePin_CMockExpect(68, &LED_GPIO_Port_Instance, ((uint16_t)0x0020), GPIO_PIN_RESET);
 
 
 
 
 
-    HAL_GPIO_WritePin_CMockExpect(69, &LED_GPIO_Port_Instance, ((uint16_t)0x0020), GPIO_PIN_RESET);
-
-
-
-
+    HAL_Delay_CMockExpect(71, 500);
 
 
 

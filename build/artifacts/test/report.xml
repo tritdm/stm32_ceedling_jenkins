@@ -9,23 +9,11 @@ Test 'test_sys.c'
 -----------------
 Running test_sys.elf...
 
--------------------
-FAILED TEST SUMMARY
--------------------
-[test_main.c]
-  Test: test_toggle_led
-  At line (69): "Function HAL_GPIO_WritePin.  Called earlier than expected."
-
 --------------------
 OVERALL TEST SUMMARY
 --------------------
 TESTED:  2
-PASSED:  1
-FAILED:  1
+PASSED:  2
+FAILED:  0
 IGNORED: 0
-
----------------------
-BUILD FAILURE SUMMARY
----------------------
-Unit test failures.
 
