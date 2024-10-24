@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <testsuites> 
 <testsuite name="Ceedling Test Suite"> 
-<testsuite tests="2" failures="0" skipped="0"> 
-<testcase classname="TestCases" name="'test_main.c'"> 
-<failure message="'test_main.c' failed" /> 
-</testcase> 
-<testcase classname="TestCases" name="'test_sys.c'"> 
-<failure message="'test_sys.c' failed" /> 
-</testcase> 
+<testsuite tests="  2" Passed:   2 failures="  0" skipped=" 0"> 
 </testsuite> 
 </testsuites> 
