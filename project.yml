@@ -160,10 +160,4 @@
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
-    - junit_report
-
-:junit_report:
-  :enabled: true
-  :file_path: build/artifacts/test/report.xml
-  :unique: false
 ...
