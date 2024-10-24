@@ -7,16 +7,16 @@
   :line: 35
   :message: ''
   :unity_test_time: 0
+:failures:
 - :test: test_toggle_led
-  :line: 60
-  :message: ''
+  :line: 69
+  :message: Function HAL_GPIO_WritePin.  Called earlier than expected.
   :unity_test_time: 0
-:failures: []
 :ignores: []
 :counts:
   :total: 2
-  :passed: 2
-  :failed: 0
+  :passed: 1
+  :failed: 1
   :ignored: 0
 :stdout: []
-:time: 0.022663900002953596
+:time: 0.02030549998744391

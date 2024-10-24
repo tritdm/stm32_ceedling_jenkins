@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'ceedling test:all 2>&1 | tee build/artifacts/test/report.xml'
+                bat 'ceedling test:all'
             }
         }
     }
