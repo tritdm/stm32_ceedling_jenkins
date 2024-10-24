@@ -35,7 +35,7 @@ for /f "tokens=2 delims=:" %%a in ('findstr "IGNORED:" %TEST_LOG%') do set IGNOR
 echo Tests: %TESTED%, Passed: %PASSED%, Failed: %FAILED%, Ignored: %IGNORED%
 
 :: Thêm thông tin tổng số test vào XML (loại bỏ dấu ":")
-echo ^<testsuite tests="%TESTED%" passes="%PASSED%" failures="%FAILED%" skipped="%IGNORED%"^> >> %REPORT_XML%
+echo ^<testsuite tests="%TESTED%" passes="%PASSED%" failures="%FAILED%" skipped="%IGNORED%"/^> >> %REPORT_XML%
 
 :: Nếu có test nào thất bại thì ghi vào failure trong XML
 if %FAILED% gtr 0 (
