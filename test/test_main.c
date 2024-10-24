@@ -63,7 +63,6 @@ void test_toggle_led(void) {
     
     // HAL_Delay được gọi với giá trị 500 ms
     HAL_Delay_Expect(500);
-    HAL_Delay_Expect(500);
     
     // HAL_GPIO_WritePin được gọi để set chân LED LOW
     HAL_GPIO_WritePin_Expect(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
