@@ -31,18 +31,16 @@ for /f "tokens=2 delims=:" %%a in ('findstr "PASSED:" %TEST_LOG%') do set PASSED
 for /f "tokens=2 delims=:" %%a in ('findstr "FAILED:" %TEST_LOG%') do set FAILED=%%a
 for /f "tokens=2 delims=:" %%a in ('findstr "IGNORED:" %TEST_LOG%') do set IGNORED=%%a
 
-:: In thông tin để kiểm tra
-echo Tests: %TESTED%, Passed: %PASSED%, Failed: %FAILED%, Ignored: %IGNORED%
-
-:: Thêm thông tin tổng số test vào XML
-echo ^<testsuite tests="%TESTED%" Passed: "%PASSED%" failures="%FAILED%" skipped="%IGNORED%"^> >> %REPORT_XML%
+:: Thêm thông tin tổng số test vào XML (loại bỏ dấu ":")
+echo ^<testsuite tests="%TESTED%" failures="%FAILED%" skipped="%IGNORED%"^> >> %REPORT_XML%
 
 :: Nếu có test nào thất bại thì ghi vào failure trong XML
 if %FAILED% gtr 0 (
+    echo ^<testcase classname="Summary" name="Overall Test Summary"^> >> %REPORT_XML%
     echo ^<failure message="Some tests failed" /^> >> %REPORT_XML%
     echo ^</testcase^> >> %REPORT_XML%
 ) else (
-    @REM echo ^<testcase classname="Summary" name="Overall Test Summary" /^> >> %REPORT_XML%
+    echo ^<testcase classname="Summary" name="Overall Test Summary" /^> >> %REPORT_XML%
 )
 
 :: Kết thúc XML
