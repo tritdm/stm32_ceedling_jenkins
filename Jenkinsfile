@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Gen XML') {
             steps {
-                bat '\'./generate_junit_report.sh\''
+                bat '\'.\\generate_junit_report.sh\''
             }
         }
         
