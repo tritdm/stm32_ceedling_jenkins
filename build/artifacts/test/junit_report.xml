@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <testsuites> 
 <testsuite name="Ceedling Test Suite"> 
-<testsuite tests="  2" Passed:   2 failures="  0" skipped=" 0"> 
+<testsuite tests="  2" passes="  2" failures="  0" skipped=" 0"> 
+<testcase classname="Summary" name="Overall Test Summary" /> 
 </testsuite> 
 </testsuites> 
